@@ -1,6 +1,6 @@
-# Xe Chat
+# Xe Chat — Xenova Labs Ltd
 
-A modern messaging UI built with React, Vite, TypeScript, Tailwind CSS, and shadcn/ui. It includes a chat list, chat window with delivery/read indicators, phone-based auth UI, contact management, and a simulated call interface.
+Xe Chat is a modern messaging UI by Xenova Labs Ltd, built with React, Vite, TypeScript, Tailwind CSS, and shadcn/ui. It includes a chat list, chat window with delivery/read indicators, phone-based auth UI, contact management, and a call overlay. A lightweight WebSocket dev server is included for local real‑time messaging.
 
 ## Features
 
@@ -19,9 +19,27 @@ A modern messaging UI built with React, Vite, TypeScript, Tailwind CSS, and shad
 - Radix UI
 - TanStack Query
 
+## Architecture
+
+- Frontend: React + Vite app in `src/`
+- Realtime (dev): minimal WebSocket server in `server/`
+- Styling: Tailwind CSS + shadcn/ui (Radix primitives)
+
 ## Getting Started
 
 Prerequisites: Node.js 18+ and npm 9+ (or bun/pnpm/yarn).
+
+Run the realtime server and the frontend in two terminals:
+
+Terminal A (WebSocket server):
+
+```bash
+cd server
+npm i
+npm start
+```
+
+Terminal B (frontend):
 
 ```bash
 npm i
@@ -29,6 +47,12 @@ npm run dev
 ```
 
 Open http://localhost:8080
+
+Optional: configure the WS URL for the frontend with `VITE_WS_URL` (defaults to `ws://localhost:3001`).
+
+```bash
+VITE_WS_URL=ws://localhost:3001 npm run dev
+```
 
 ## Scripts
 
@@ -40,8 +64,14 @@ Open http://localhost:8080
 
 ## Notes
 
-This project uses mock data and simulated flows for demonstration. Replace stubs with real APIs for production use (auth, chat delivery, and calling).
+Auth and calling are demo UIs. Replace stubs with real services for production (e.g., Firebase/Twilio for phone auth; WebRTC + TURN for calling).
+
+## Company
+
+Xenova Labs Ltd builds practical, reliable software with a focus on user experience and developer ergonomics.
+
+For inquiries: contact@xenovalabs.com
 
 ## License
 
-MIT
+MIT © Xenova Labs Ltd
