@@ -1,13 +1,23 @@
 {
   "name": "xe-chat",
   "description": "A modern messaging UI built with React, Vite, TypeScript, Tailwind CSS, and shadcn/ui.",
-  "author": "Xe Chat",
+  "author": "Xenova Labs Ltd",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/migishaone/xechat.git"
+  },
+  "bugs": {
+    "url": "https://github.com/migishaone/xechat/issues"
+  },
+  "homepage": "https://github.com/migishaone/xechat",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "dev:server": "npm --prefix server start",
+    "dev:all": "node scripts/dev-both.mjs",
     "build": "vite build",
     "build:dev": "vite build --mode development",
     "lint": "eslint .",
