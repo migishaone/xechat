@@ -74,4 +74,4 @@ For inquiries: contact@xenovalabs.com
 
 ## License
 
-MIT © Xenova Labs Ltd
+All rights reserved © Xenova Labs Ltd

@@ -2,7 +2,7 @@
   "name": "xe-chat",
   "description": "A modern messaging UI built with React, Vite, TypeScript, Tailwind CSS, and shadcn/ui.",
   "author": "Xenova Labs Ltd",
-  "license": "MIT",
+  "license": "UNLICENSED",
   "repository": {
     "type": "git",
     "url": "https://github.com/migishaone/xechat.git"
